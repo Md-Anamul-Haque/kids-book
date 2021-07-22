@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sound of a-z</title>
+    
+    <style type="text/css">
+*{ border:solid; outline:none; margin:0; padding:0; box-sizing:border-box;}
+.mybtn{
+    background: green;
+    color: white;
+    font-weight:bolder;
+border-radius:5px;
+}
+h1{color:silver;}
+body {
+  background-color: lightblue;
+  
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+  }
+@media only screen and (max-width:599px) {
+  .mybtn{  width:45%; height:120px; }
+    .mybtn{font-size:4.5rem;}
+}
+@media only screen and (min-width:600px) {
+  .mybtn{  width:30%; height:180px;}
+  cent{margin-top:10px;}
+  
+   .mybtn{font-size:7.2rem;} 
+}
+@media only screen and (min-width:900px) {
+  .mybtn{  width:22%; height:250px; }
+  cent{margin-top:20px;}
+    .mybtn{font-size:6rem;}
+  }
+
+
+.ft h1{outline:none; background:blue; border-radius:5px 5px 30px 30px; position:fixed; top:auto; left:auto; width:100%;}
+</style>
+
+</head>
+
+<body>
+<div class="ft"><h1>🎗️</h1></div>
+<div class="cent" style="margin-top:60px;">
+  <button class="mybtn">A</button>
+  <button class="mybtn">B</button>
+  <button class="mybtn">C</button>
+  <button class="mybtn">D</button>
+  <button class="mybtn">E</button>
+  <button class="mybtn">F</button>
+  <button class="mybtn">G</button>
+  <button class="mybtn">H</button>
+  <button class="mybtn">I</button>
+  <button class="mybtn">J</button>
+  <button class="mybtn">K</button>
+  <button class="mybtn">L</button>
+  <button class="mybtn">M</button>
+  <button class="mybtn">N</button>
+  <button class="mybtn">O</button>
+  <button class="mybtn">P</button>
+  <button class="mybtn">Q</button>
+  <button class="mybtn">R</button>
+  <button class="mybtn">S</button>
+  <button class="mybtn">T</button>
+  <button class="mybtn">U</button>
+  <button class="mybtn">V</button>
+  <button class="mybtn">W</button>
+  <button class="mybtn">X</button>
+  <button class="mybtn">Y</button>
+  <button class="mybtn">Z</button>
+</div>
+
+<div style=" color: white; margin-top:30px; width:100%; background:#011;" class="nabber">
+<h3>&copy kids book</h3>
+</div>
+
+<script type="text/javascript">
+
+for(var i=0; i<26; i++){
+document.querySelectorAll(".mybtn")[i].addEventListener("click", function(){
+var tex = this.innerHTML; 
+document.querySelector("h1").innerHTML=tex;
+
+switch(tex){
+case tex:
+var audio = new Audio(tex+'.wav');
+  audio.play();
+  break;
+  
+}
+
+
+});
+}
+</script>
+</body>
+
+</html>
